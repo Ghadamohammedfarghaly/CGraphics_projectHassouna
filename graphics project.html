@@ -1,0 +1,167 @@
+                    <!--بسم الله الرحمن الرحيم-->
+<html>
+
+<head>
+    
+    <title>Picture</title>
+ <style>
+    
+     #h1{
+       color:white; 
+       text-align:center;
+       text-shadow:1px 1px firebrick;
+       font-style:italic;
+       font-size:40px;
+       background-color:blueviolet;
+       position:absolute;
+       top:0px;
+       margin:0px;
+       left:0px;
+       width:100%;
+     }
+     
+     #h1:hover{
+         color:blueviolet;
+         background-color:white;
+        
+     }
+     
+     body{
+       background-color:aqua;  
+     }
+     
+     #p1{
+      position:absolute;
+      top:110px;
+      color:white;
+      font-size:30px;
+      font-family:monospace;
+      text-decoration:underline;
+      background-color:blueviolet;
+      height:50px;
+      width:600px;
+      border-radius:30px;
+      text-align: center;
+      border:5px outset white;
+      margin-left:40px;
+     }
+     
+     #p1:hover{
+      color:blueviolet;
+      background-color:white; 
+     }
+     
+     .div1{
+       background-color:blueviolet;
+       height:400px;
+       width:750px;
+       position:absolute;
+       border-radius:20px;
+       top:250px;
+       border:5px outset white;
+       overflow:auto;
+     }
+     
+    div div{
+       width:250px;
+       height:200px;
+       border-radius:20px;
+       overflow:none;
+         }
+     #in1{
+       position:absolute;
+       top:2px;
+       border:3px outset white; 
+     }
+     
+     #in2{
+         
+       position:absolute;
+       top:2px;
+       left:250px; 
+       border:3px outset white;
+     }
+     #in3{
+       position:absolute;
+       top:2px;
+       left:500px;
+       border:3px outset white;
+     }
+     
+     #in4{
+         
+       position:absolute;
+       top:200px;
+       left:0px;
+       border:3px outset white;
+     }
+     
+     #in5{
+       position:absolute;
+       top:200px;
+       left:250px;
+     }
+     
+     #in6{
+       position:absolute;
+       top:200px;
+       left:500px;
+       border:3px outset white;
+     }
+     
+     #in7{
+         position:absolute;
+         top:330px;
+         left:900px;
+         height:200px;
+         width:250px;
+         border-radius:20px;
+         border:3px outset white;
+         background-color:blueviolet;
+     } 
+     
+     
+     img{
+         
+        height:200;
+        width:250;
+        border-radius:20px;
+     }
+    </style>   
+    
+</head>
+
+<body>
+    
+    <h1 id="h1">Welcome in our website </h1> 
+    <p id="p1">
+    Choice the picture that you want
+    </p>
+    <div class="div1">                                                                    
+     <div id="in1" onclick="replace(this);"><img src="picture/p1.png"></div>
+     <div id="in2" onclick="replace(this);"><img src="picture/p2.png"></div>
+     <div id="in3" onclick="replace(this);"><img src="picture/p3.png"></div> 
+     <div id="in4" onclick="replace(this);"><img src="picture/p4.png"></div>
+     <div id="in5" onclick="replace(this);" ><img src="picture/p5.png"></div> 
+     <div id="in6" onclick="replace(this);"><img src="picture/p6.png"></div>
+    </div>
+    <br>
+    <br>
+    <div id="in7" ></div>
+    
+    
+    <script>
+                                                 //there is many idea for this project
+    function replace(element){
+       window.in7.innerHTML=element.innerHTML ; 
+        
+    }
+        
+        
+        
+    
+    </script>
+    
+</body>
+
+</html>
